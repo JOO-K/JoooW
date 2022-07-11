@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Juliette;
+    src: url(./fonts/Juliette.otf);
+}
+
+@font-face {
+    font-family: JulietteReg;
+    src: url(./fonts/Juliette-Regular.otf);
+}
+
+@font-face {
+    font-family: Graphik;
+    src: url(./fonts/Graphik.otf);
+}
+
+@font-face {
+    font-family: GraphikBold;
+    src: url(./fonts/Graphik-Bold.otf);
+}
+
+@font-face {
+    font-family: Apercu;
+    src: url(./fonts/Apercu.otf);
+}
+
+@font-face {
+    font-family: Altima;
+    src: url(./fonts/Altima.otf);
+}
+
+@font-face {
+    font-family: FF7;
+    src: url(./fonts/Final_Fantasy_VII.ttf);
+}
+
+@font-face {
+    font-family: ReplicaReg;
+    src: url(./fonts/Replica-Regular.otf);
+}
+
+@font-face {
+    font-family: ReplicaBold;
+    src: url(./fonts/Replica-Bold.otf);
+}
+
+html{
+/*    cursor: cell;*/
+/*    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=173337'),auto;*/
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.nav{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 500px;
+   
+    background-color: black;
+    text-align: right;
+}
+
+.navitem h1{
+    font-family: ReplicaBold;
+    color: white;
+    font-size: 100px;
+    line-height: 80px;
+    letter-spacing: -10px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    
+}
+
+.navitem h1:hover{
+    color: dodgerblue;
+}
+
+.intro{
+    position: fixed;
+    top: 25%;
+    left: 0px;
+    height: 50%;
+    width: 300px;
+    background-color: ;
+    border: 1px white solid;
+    border-width: 1px 1px 1px 0px;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.introitem{
+    margin: 10px;
+}
+
+.introitem h1{
+    font-family: ReplicaReg;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px;
+}
+
+
+/*
+@media all and (max-width: 800px) {
+    nav{
+        display: none;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

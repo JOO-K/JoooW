@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>JOO-OW</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="imgs/plusicon.png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <script src="js/anime.min.js"></script>
+        <!--        <script src="js/preload.js"></script>-->
+    </head>
+
+    <body>
+        
+        <div class="nav">
+            <div class="navitem"><a href="index.html"><h1>JOOOW</h1></a></div>
+        </div>
+        
+        <div class="intro">
+            <div class="introitem"><h1>This is an archive created by Marie Ow, Eric Joo, and Any Others. It serves to archive web projects made by the JOOOW collective. Look around and suffer!</h1></div>
+        </div>
+
+        
+        <!-- tilt.js -->
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+        <script type="text/javascript">
+
+            // CHANGES
+            var card = document.querySelectorAll(".card")
+            for (var i = 0; i < card.length; i++) {
+                card[i].setAttribute("data-tilt", "");
+                card[i].setAttribute("data-tilt-reset", "false");
+            }
+
+            VanillaTilt.init(card, {
+                reverse: true,
+                max: 30,
+                startX: -0,
+                startY: -0,
+                speed: 5000,
+
+                scale: 1.010,
+                transition: true,
+                gyroscope: true,
+                gyroscopeMaxAngleX: 20,
+                gyroscopeMinAngleX: -20
+            });
+        </script>
+
+        <script>
+            // Reset VanillaTilt
+
+            timeOut = 500; // delay in milliseconds
+
+            $(".container").mouseleave(function () {
+                setTimeout(function() {
+                    var card = document.querySelectorAll(".card")
+                    for (var i = 0; i < card.length; i++) {
+                        card[i].vanillaTilt.destroy();
+                    }
+                    VanillaTilt.init(card, {
+                        reverse: true,
+                        max: 30,
+                        startX: 0,
+                        startY: 0,
+                        speed: 5000,
+                        scale: 1.010,
+                        
+                        gyroscope: true,
+                gyroscopeMinAngleX:-45,
+                gyroscopeMaxAngleX:-45,
+                gyroscopeMinAngleY:-45,
+                gyroscopeMaxAngleY:-45
+                    });
+                }, timeOut);
+            })
+
+        </script>
+
+        <!--  Typewriter.js  -->
+        <script>
+            var app = document.getElementById('khj');
+
+            var typewriter = new Typewriter(app, {
+                loop: true,
+                delay: 75,
+            });
+
+            typewriter
+                .typeString('eric joo')
+                .pauseFor(5000)
+                .deleteChars(8)
+                .typeString('design')
+                .pauseFor(400)
+                .deleteChars(8)
+                .typeString('grafix')
+                .pauseFor(400)
+                .deleteChars(8)
+                .typeString('media')
+                .pauseFor(400)
+                .deleteChars(8)
+                .typeString('clutter')
+                .pauseFor(400)
+                .deleteChars(8)
+                .start();
+        </script>
+        
+        <script>
+            var app = document.getElementById('mobilekhj');
+
+            var typewriter = new Typewriter(app, {
+                loop: true,
+                delay: 75,
+            });
+
+            typewriter
+                .typeString('eric joo')
+                .pauseFor(10000)
+                .deleteChars(10)
+                .typeString('hello')
+                .pauseFor(500)
+                .deleteChars(10)
+                .typeString(':-) :-) :-)')
+                .pauseFor(500)
+                .deleteChars(10)
+                .start();
+        </script>
+        
+        <script>
+            var slider = document.getElementById("slider");
+            var output = document.getElementById("demo");
+            
+            output.innerHTML = slider.value; // Display the default slider value
+            sliderHandler.apply(slider); // Initialize link's value by calling the handler
+
+            // Update the current slider value (each time you drag the slider handle)
+            slider.oninput = sliderHandler;
+            function sliderHandler() {
+                output.innerHTML = this.value;
+                
+                if(this.value==1)
+                    $("#scrollimg-container1").css({'display':'block'});
+                else if(this.value!=1)
+                    $("#scrollimg-container1").css({'display':'none'});
+                
+                if(this.value==2)
+                    $("#scrollimg-container2").css({'display':'block'});
+                else if(this.value!=2)
+                    $("#scrollimg-container2").css({'display':'none'});
+                
+                if(this.value==3)
+                    $("#scrollimg-container3").css({'display':'block'});
+                else if(this.value!=3)
+                    $("#scrollimg-container3").css({'display':'none'});
+                
+                if(this.value==4)
+                    $("#scrollimg-container4").css({'display':'block'});
+                else if(this.value!=4)
+                    $("#scrollimg-container4").css({'display':'none'});
+                
+                if(this.value==5)
+                    $("#scrollimg-container5").css({'display':'block'});
+                else if(this.value!=5)
+                    $("#scrollimg-container5").css({'display':'none'});
+                
+                if(this.value==6)
+                    $("#scrollimg-container6").css({'display':'block'});
+                else if(this.value!=6)
+                    $("#scrollimg-container6").css({'display':'none'});
+                
+                if(this.value==7)
+                    $("#scrollimg-container7").css({'display':'block'});
+                else if(this.value!=7)
+                    $("#scrollimg-container7").css({'display':'none'});
+                
+                if(this.value==8)
+                    $("#scrollimg-container8").css({'display':'block'});
+                else if(this.value!=8)
+                    $("#scrollimg-container8").css({'display':'none'});
+                
+                if(this.value==9)
+                    $("#scrollimg-container9").css({'display':'block'});
+                else if(this.value!=9)
+                    $("#scrollimg-container9").css({'display':'none'});
+             
+            }
+            
+        </script>
+        
+
+    </body>
+
+</html>
